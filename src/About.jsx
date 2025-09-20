@@ -50,9 +50,9 @@ const About = () => {
       <div className="container">
         {/* Title + Description */}
         <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
-          <h1 className="text-5xl font-semibold">About CodeSphere Academy</h1>
+          <h1 className="text-5xl font-semibold">About Tech Orbit Academy</h1>
           <p className="text-muted-foreground">
-            At CodeSphere, we believe quality education should be accessible to
+            At Tech Orbit, we believe quality education should be accessible to
             everyone. Our mission is to provide authentic web development
             training from React to full-stack development at reasonable prices.
             We focus on helping beginners and students build real skills that
@@ -66,13 +66,13 @@ const About = () => {
         <div className="grid gap-7 lg:grid-cols-3">
           <img
             src={banner}
-            alt="Students learning web development at CodeSphere"
+            alt="Students learning web development at Tech Orbit "
             className="size-full max-h-[620px] rounded-xl object-cover lg:col-span-2"
           />
 
           <div className="flex flex-col gap-7 md:flex-row lg:flex-col">
             <div className="flex flex-col justify-between gap-6 rounded-xl bg-muted p-7 md:w-1/2 lg:w-auto">
-              <img src={logo} alt="CodeSphere logo" className="mr-auto h-12" />
+              <img src={logo} alt="Tech Orbit  logo" className="mr-auto h-12" />
               <div>
                 <p className="mb-2 text-lg font-semibold">
                   Our Promise to Students
@@ -91,7 +91,7 @@ const About = () => {
             </div>
             <img
               src={logo}
-              alt="CodeSphere students"
+              alt="Tech Orbit students"
               className="grow basis-0 rounded-xl object-cover md:w-1/2 lg:min-h-0 lg:w-auto"
             />
           </div>
