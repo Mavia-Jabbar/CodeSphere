@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="#" className="flex items-center gap-2">
             <img src={logo} className="max-h-16" alt="Shadcn UI Navbar" />
             <span className="text-lg font-semibold tracking-tighter">
-              codeSphere
+              Tech Orbit
             </span>
           </a>
 
@@ -80,7 +80,7 @@ const Navbar = () => {
                     <img
                       src={logo}
                       className="max-h-8"
-                      alt="Shadcn UI Navbar"
+                      alt="Shadcn UI4 Navbar"
                     />
                     <span className="text-lg font-semibold tracking-tighter">
                       My Institute
