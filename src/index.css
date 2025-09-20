@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "@fontsource/inter/variable.css";
-
-:root {
-  font-family: "InterVariable", sans-serif;
-}
-
 @layer base {
   :root {
     --background: 0 0% 100%;

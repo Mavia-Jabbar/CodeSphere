@@ -84,7 +84,7 @@ export default function CoursesPricing({
   ],
 }) {
   return (
-    <section className="py-16">
+    <section className="py-16" id="coursesprizing">
       {" "}
       {/* reduced padding */}
       <div className="container">
