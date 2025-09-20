@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply font-sans;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

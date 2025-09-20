@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import logo from "./logo.png";
 import banner from "./banner.jfif";
+import founder from "./founder.jpeg";
+import cofounder from "./cofounder.jpeg";
 
 const defaultCompanies = [
   {
@@ -100,18 +102,83 @@ const About = () => {
         </div>
 
         {/* Technologies/Partners */}
-        <div className="py-32">
-          <p className="text-center">Powered by Modern Technologies</p>
-          <div className="mt-8 flex flex-wrap justify-center gap-8">
+        <div className="py-16">
+          <h2 className="text-3xl font-bold text-center">
+            Powered by Modern Technologies
+          </h2>
+          <div className="mt-10 flex flex-wrap justify-center gap-12">
             {defaultCompanies.map((company, idx) => (
               <div className="flex items-center gap-3" key={company.src + idx}>
                 <img
                   src={company.src}
                   alt={company.alt}
-                  className="h-8 w-auto"
+                  className="h-14 w-auto" // 👉 bigger logos
                 />
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Founders Section */}
+        <div className="py-20">
+          <div className="grid gap-10 md:grid-cols-2">
+            {/* Founder */}
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
+              <img
+                src={founder} // replace with your imported founder image
+                alt="Founder - Mavia Jabbar"
+                className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
+              />
+              <div className="flex-1 text-left">
+                <h3 className="text-2xl font-semibold">Founder</h3>
+                <h5>Mavia Jabbar</h5>
+                <p className="text-muted-foreground mt-2">
+                  Founder of Tech Orbit Academy. Passionate about web
+                  development, React, and building platforms that empower
+                  students with hands-on projects. Mavia focuses on accessible
+                  and affordable training that prepares learners for freelancing
+                  and real-world jobs.
+                </p>
+                <Button asChild className="mt-4">
+                  <a
+                    href="https://your-portfolio-link.com" // replace with your portfolio link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Portfolio
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Co-Founder */}
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
+              <img
+                src={cofounder} // replace with Ali's image import
+                alt="Co-Founder - Ali Fahad"
+                className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
+              />
+              <div className="flex-1 text-left">
+                <h3 className="text-2xl font-semibold">Co-Founder</h3>
+                <h5>Ali Fahad </h5>
+                <p className="text-muted-foreground mt-2">
+                  Co-Founder of Tech Orbit Academy. Ali manages the daily
+                  operations of Tech Orbit, handles student records and data,
+                  and ensures smooth communication with learners. He is
+                  dedicated to providing students with guidance and support
+                  throughout their journey.
+                </p>
+                <Button asChild className="mt-4">
+                  <a
+                    href="https://ali-portfolio-link.com" // replace with Ali's portfolio
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Portfolio
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
 

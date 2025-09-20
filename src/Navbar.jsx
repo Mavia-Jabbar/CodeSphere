@@ -34,10 +34,19 @@ const Navbar = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink
-                  href="#courses"
+                  href="#coursesprizing"
                   className={navigationMenuTriggerStyle()}
                 >
                   Courses
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuLink
+                  href="#coursesprizing"
+                  className={navigationMenuTriggerStyle()}
+                >
+                  Pricing
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>

@@ -31,7 +31,7 @@ const Hero = () => {
                 <a href="#Form">Apply Now</a>
               </Button>
               <Button asChild variant="outline" className="w-full sm:w-auto">
-                <a href="#courses">
+                <a href="#coursesprizing">
                   View Courses
                   <ArrowRight className="size-4 ml-1" />
                 </a>

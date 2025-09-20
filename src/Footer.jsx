@@ -18,8 +18,11 @@ export default function Footer() {
 
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-6 text-sm font-medium">
-            <a href="#courses" className="hover:text-primary">
+            <a href="#coursesprizing" className="hover:text-primary">
               Courses
+            </a>
+            <a href="#coursesprizing" className="hover:text-primary">
+              Pricing
             </a>
             <a href="#about" className="hover:text-primary">
               About

@@ -7,6 +7,7 @@ import Courses from "./Courses";
 import CodeSphereForm from "./CodeSphereForm";
 import Footer from "./Footer";
 import CustomAlert from "./CustomAlert";
+import CoursesPricing from "./CoursesPricing";
 
 function App() {
   const [alert, setalert] = useState(false);
@@ -25,6 +26,7 @@ function App() {
       <Hero></Hero>
       <About3></About3>
       <Courses></Courses>
+      <CoursesPricing></CoursesPricing>
       <CodeSphereForm showAlert={showAlert}></CodeSphereForm>
       <Footer></Footer>
     </>
