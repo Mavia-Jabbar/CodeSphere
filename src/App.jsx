@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Navbar from "./Navbar";
-import Hero from "./hero";
+import Hero from "./Hero";
 import About3 from "./About";
 import Courses from "./Courses";
 import CodeSphereForm from "./CodeSphereForm";
