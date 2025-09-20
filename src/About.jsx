@@ -50,7 +50,9 @@ const About = () => {
       <div className="container">
         {/* Title + Description */}
         <div className="mb-14 grid gap-5 text-center md:grid-cols-2 md:text-left">
-          <h1 className="text-5xl font-semibold">About Tech Orbit Academy</h1>
+          <h1 className="text-5xl font-semibold">
+            About Tech Orbit <br /> Academy
+          </h1>
           <p className="text-muted-foreground">
             At Tech Orbit, we believe quality education should be accessible to
             everyone. Our mission is to provide authentic web development
