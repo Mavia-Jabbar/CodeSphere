@@ -81,6 +81,7 @@ export default function CodeSphereForm(props) {
       if (!res.ok) throw new Error("Failed to send email");
 
       toast.success("✅ Application submitted — check your inbox!");
+      props.showAlert(); // Show alert after successful email
     } catch (error) {
       console.error(error);
       toast.error("Failed to submit the form. Please try again.");
@@ -300,7 +301,7 @@ export default function CodeSphereForm(props) {
               <Button
                 type="submit"
                 className="px-6 py-2 text-base font-semibold"
-                onClick={props.showAlerts}
+                // onClick={props.showAlerts}
               >
                 Submit
               </Button>
