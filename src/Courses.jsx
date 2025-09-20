@@ -7,14 +7,12 @@ import {
   Bot,
   MessageSquare,
   Award,
+  GitBranch,
+  ShoppingCart,
+  PenTool,
 } from "lucide-react";
 
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 const Courses = () => {
   return (
@@ -133,6 +131,56 @@ const Courses = () => {
                 <p className="leading-snug text-muted-foreground">
                   Learn how to write effective prompts to get the best out of AI
                   models.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Git & GitHub */}
+            <Card>
+              <CardHeader className="pb-1">
+                <GitBranch className="size-6 text-red-500" strokeWidth={1.5} />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">Git & GitHub</h2>
+                <p className="leading-snug text-muted-foreground">
+                  Learn version control and collaboration with Git & GitHub to
+                  work like a pro developer.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* E-commerce Guidance */}
+            <Card>
+              <CardHeader className="pb-1">
+                <ShoppingCart
+                  className="size-6 text-emerald-500"
+                  strokeWidth={1.5}
+                />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">
+                  E-commerce Guidance
+                </h2>
+                <p className="leading-snug text-muted-foreground">
+                  Step-by-step guidance to launch and manage your own online
+                  store successfully.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* UI/UX Designing */}
+            <Card>
+              <CardHeader className="pb-1">
+                <PenTool
+                  className="size-6 text-fuchsia-500"
+                  strokeWidth={1.5}
+                />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">UI/UX Designing</h2>
+                <p className="leading-snug text-muted-foreground">
+                  Learn design principles and tools to create user-friendly and
+                  visually stunning digital products.
                 </p>
               </CardContent>
             </Card>
