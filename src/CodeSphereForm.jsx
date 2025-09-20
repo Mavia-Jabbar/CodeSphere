@@ -93,11 +93,11 @@ export default function CodeSphereForm(props) {
       <section className="py-20 bg-gradient-to-b " id="Form">
         <div className="container">
           <h1 className="mb-4 text-4xl font-bold text-center text-slate-900">
-            CodeSphere Admission Form
+            Tech Orbit Admission Form
           </h1>
           <p className="mb-10 text-slate-600 text-center max-w-2xl mx-auto">
             Apply now to kickstart your coding journey at{" "}
-            <span className="font-semibold">CodeSphere Academy</span>. Choose
+            <span className="font-semibold">Tech Orbit Academy</span>. Choose
             your course, enhance your skills, and earn a certificate!
           </p>
 
@@ -248,7 +248,7 @@ export default function CodeSphereForm(props) {
                       <FormDescription>
                         Do you want an official{" "}
                         <span className="font-semibold">
-                          CodeSphere Certificate
+                          Tech Orbit Certificate
                         </span>{" "}
                         after completion?
                       </FormDescription>
@@ -287,7 +287,7 @@ export default function CodeSphereForm(props) {
                     <FormLabel>Tell Us About Yourself</FormLabel>
                     <FormControl>
                       <Textarea
-                        placeholder="Why do you want to join CodeSphere? Share your background and goals."
+                        placeholder="Why do you want to join Tech Orbit? Share your background and goals."
                         className="resize-none"
                         {...field}
                       />

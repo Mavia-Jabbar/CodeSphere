@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo & tagline */}
           <div className="text-center md:text-left">
             <h2 className="text-2xl font-bold text-primary">
-              CodeSphere Academy
+              Tech Orbit Academy
             </h2>
             <p className="text-muted-foreground mt-2 text-sm">
               Empowering beginners with real-world coding skills.
@@ -35,7 +35,7 @@ export default function Footer() {
 
         {/* Bottom copyright */}
         <div className="text-center text-xs text-muted-foreground">
-          © 2025 CodeSphere Academy. All rights reserved.
+          © 2025 Tech Orbit Academy. All rights reserved.
         </div>
       </div>
     </footer>
