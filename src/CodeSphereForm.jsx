@@ -98,7 +98,8 @@ export default function CodeSphereForm(props) {
           <p className="mb-10 text-slate-600 text-center max-w-2xl mx-auto">
             Apply now to kickstart your coding journey at{" "}
             <span className="font-semibold">Tech Orbit Academy</span>. Choose
-            your course, enhance your skills, and earn a certificate!
+            your course, enhance your skills, and earn a certificate! We would
+            contact you on your whatsapp and then continue your course.
           </p>
 
           <Form {...form}>
