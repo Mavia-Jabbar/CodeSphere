@@ -7,9 +7,12 @@ import {
   Bot,
   MessageSquare,
   Award,
-  GitBranch,
-  ShoppingCart,
-  PenTool,
+  Github,
+  Cloud,
+  Users,
+  Rocket,
+  ShoppingCart, // ✅ added
+  PenTool, // ✅ added
 } from "lucide-react";
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -135,20 +138,6 @@ const Courses = () => {
               </CardContent>
             </Card>
 
-            {/* Git & GitHub */}
-            <Card>
-              <CardHeader className="pb-1">
-                <GitBranch className="size-6 text-red-500" strokeWidth={1.5} />
-              </CardHeader>
-              <CardContent className="text-left">
-                <h2 className="mb-1 text-lg font-semibold">Git & GitHub</h2>
-                <p className="leading-snug text-muted-foreground">
-                  Learn version control and collaboration with Git & GitHub to
-                  work like a pro developer.
-                </p>
-              </CardContent>
-            </Card>
-
             {/* E-commerce Guidance */}
             <Card>
               <CardHeader className="pb-1">
@@ -195,6 +184,70 @@ const Courses = () => {
                 <p className="leading-snug text-muted-foreground">
                   Students completing our courses will receive an official
                   certificate.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Vercel Deployment */}
+            <Card>
+              <CardHeader className="pb-1">
+                <Cloud className="size-6 text-sky-500" strokeWidth={1.5} />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">
+                  Vercel Deployment
+                </h2>
+                <p className="leading-snug text-muted-foreground">
+                  Learn how to deploy and host your projects with Vercel for
+                  free and production-ready CI/CD.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Soft Skills */}
+            <Card>
+              <CardHeader className="pb-1">
+                <Users className="size-6 text-pink-500" strokeWidth={1.5} />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">
+                  Soft Skills for Developers
+                </h2>
+                <p className="leading-snug text-muted-foreground">
+                  Improve communication, portfolio building, and resume writing
+                  to stand out in the job market.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* AI-assisted Coding */}
+            <Card>
+              <CardHeader className="pb-1">
+                <Bot className="size-6 text-teal-500" strokeWidth={1.5} />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">
+                  AI-assisted Coding
+                </h2>
+                <p className="leading-snug text-muted-foreground">
+                  Use tools like GitHub Copilot and ChatGPT to code faster and
+                  smarter with AI support.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Freelancer Launch Program */}
+            <Card>
+              <CardHeader className="pb-1">
+                <Rocket className="size-6 text-orange-500" strokeWidth={1.5} />
+              </CardHeader>
+              <CardContent className="text-left">
+                <h2 className="mb-1 text-lg font-semibold">
+                  Freelancer Launch Program
+                </h2>
+                <p className="leading-snug text-muted-foreground">
+                  Step-by-step guidance on building profiles, getting first
+                  clients, and growing as a freelancer.
                 </p>
               </CardContent>
             </Card>

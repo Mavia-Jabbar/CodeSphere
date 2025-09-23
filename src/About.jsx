@@ -40,7 +40,7 @@ const defaultCompanies = [
 ];
 
 const defaultAchievements = [
-  { label: "Students Trained", value: "100+" },
+  { label: "Certificate Issued", value: "20+" },
   { label: "Projects Completed", value: "60+" },
   { label: "Student Satisfaction", value: "98%" },
   { label: "Certificates Awarded", value: "Yes 🎓" },
@@ -121,18 +121,18 @@ const About = () => {
 
         {/* Founders Section */}
         <div className="py-20">
-          <div className="grid gap-10 md:grid-cols-2">
+          <div className="grid gap-10">
             {/* Founder */}
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
+            <div className="flex flex-col md:flex-row items-start gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
               <img
                 src={founder} // replace with your imported founder image
                 alt="Founder - Mavia Jabbar"
                 className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
               />
               <div className="flex-1 text-left">
-                <h3 className="text-2xl font-semibold">Founder</h3>
-                <h5>Mavia Jabbar</h5>
-                <p className="text-muted-foreground mt-2">
+                <h3 className="text-2xl font-semibold text-left">Founder</h3>
+                <h5 className="text-lg font-medium mt-1">Mavia Jabbar</h5>
+                <p className="text-muted-foreground mt-3">
                   Founder of Tech Orbit Academy. Passionate about web
                   development, React, and building platforms that empower
                   students with hands-on projects. Mavia focuses on accessible
@@ -151,34 +151,36 @@ const About = () => {
               </div>
             </div>
 
-            {/* Co-Founder */}
-            <div className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
-              <img
-                src={cofounder} // replace with Ali's image import
-                alt="Co-Founder - Ali Fahad"
-                className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
-              />
-              <div className="flex-1 text-left">
-                <h3 className="text-2xl font-semibold">Co-Founder</h3>
-                <h5>Ali Fahad </h5>
-                <p className="text-muted-foreground mt-2">
-                  Co-Founder of Tech Orbit Academy. Ali manages the daily
-                  operations of Tech Orbit, handles student records and data,
-                  and ensures smooth communication with learners. He is
-                  dedicated to providing students with guidance and support
-                  throughout their journey.
-                </p>
-                <Button asChild className="mt-4">
-                  <a
-                    href="https://ali-portfolio-link.com" // replace with Ali's portfolio
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Portfolio
-                  </a>
-                </Button>
-              </div>
-            </div>
+            {/*
+    // Co-Founder (commented out)
+    <div className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
+      <img
+        src={cofounder} // replace with Ali's image import
+        alt="Co-Founder - Ali Fahad"
+        className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
+      />
+      <div className="flex-1 text-left">
+        <h3 className="text-2xl font-semibold">Co-Founder</h3>
+        <h5 className="text-lg font-medium mt-1">Ali Fahad</h5>
+        <p className="text-muted-foreground mt-2">
+          Co-Founder of Tech Orbit Academy. Ali manages the daily
+          operations of Tech Orbit, handles student records and data,
+          and ensures smooth communication with learners. He is
+          dedicated to providing students with guidance and support
+          throughout their journey.
+        </p>
+        <Button asChild className="mt-4">
+          <a
+            href="https://ali-portfolio-link.com" // replace with Ali's portfolio
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Portfolio
+          </a>
+        </Button>
+      </div>
+    </div>
+    */}
           </div>
         </div>
 
