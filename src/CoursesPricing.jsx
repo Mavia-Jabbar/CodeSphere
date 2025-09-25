@@ -20,7 +20,7 @@ export default function CoursesPricing({
       name: "Basic Coding",
       description: "Learn the foundations of coding",
       price: "PKR 2500 / month",
-      note: "Course duration depends on student’s pace.",
+      note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "HTML, CSS, JavaScript basics" },
         { text: "Hands-on projects" },
@@ -36,13 +36,13 @@ export default function CoursesPricing({
       name: "Complete Web Development",
       description: "Frontend + backend mastery",
       price: "PKR 4000 / month",
-      note: "Course duration depends on student’s pace.",
+      note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "HTML, CSS, JavaScript advanced" },
-        { text: "React & modern frameworks" },
-        { text: "Node.js, Express & databases" },
-        { text: "Deployment & hosting guidance" },
-        { text: "Full-stack project building" },
+        { text: "React & modern frameworks (React, Router, State mgmt)" },
+        { text: "Node.js, Express & databases (MongoDB)" },
+        { text: "Deployment & hosting (Vercel) & CI/CD" },
+        { text: "Full-stack real-world project building" },
       ],
       button: {
         text: "Apply Now",
@@ -54,7 +54,7 @@ export default function CoursesPricing({
       name: "AI Problem Solving & Prompt Engineering",
       description: "Harness the power of AI tools",
       price: "PKR 1500 / month",
-      note: "Course duration depends on student’s pace.",
+      note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "Learn problem-solving with AI" },
         { text: "Prompt engineering best practices" },
@@ -70,7 +70,7 @@ export default function CoursesPricing({
       name: "WordPress & Shopify Development",
       description: "Build and manage websites & stores",
       price: "PKR 2500 / month",
-      note: "Course duration depends on student’s pace.",
+      note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "WordPress customization" },
         { text: "Shopify store development" },
@@ -81,12 +81,30 @@ export default function CoursesPricing({
         url: "#Form",
       },
     },
+    // NEW: E-commerce Guidance card added
+    {
+      id: "ecommerce-guidance",
+      name: "E-commerce Guidance",
+      description:
+        "E-commerce store setup, Meta Ads, payment gateways & scaling strategies",
+      price: "PKR 3500 / month",
+      note: "Per-month charges. Course duration depends on the student's pace.",
+      features: [
+        { text: "Store setup (Shopify / WooCommerce / Custom)" },
+        { text: "Meta (Facebook & Instagram) Ads setup & optimization" },
+        { text: "Payment gateway integration & secure checkout" },
+        { text: "Analytics, tracking (Pixel/GA) & scaling strategies" },
+        { text: "Post-launch growth & conversion optimization" },
+      ],
+      button: {
+        text: "Apply Now",
+        url: "#Form",
+      },
+    },
   ],
 }) {
   return (
     <section className="py-16" id="coursesprizing">
-      {" "}
-      {/* reduced padding */}
       <div className="container">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center">
           <h2 className="text-4xl font-semibold text-pretty lg:text-5xl">
@@ -95,7 +113,7 @@ export default function CoursesPricing({
           <p className="text-muted-foreground lg:text-lg">{description}</p>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 mt-6">
             {plans.map((plan) => (
               <Card
                 key={plan.id}
