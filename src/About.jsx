@@ -141,7 +141,7 @@ const About = () => {
                 </p>
                 <Button asChild className="mt-4">
                   <a
-                    href="https://your-portfolio-link.com" // replace with your portfolio link
+                    href="https://techorbitzeta.vercel.app/" // replace with your portfolio link
                     target="_blank"
                     rel="noopener noreferrer"
                   >
