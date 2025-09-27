@@ -3,6 +3,9 @@ import logo from "./logo.png";
 import banner from "./banner.jfif";
 import founder from "./founder.jpeg";
 import cofounder from "./cofounder.jpeg";
+import { Card, CardContent } from "@/components/ui/card";
+import Huzaifa from "./Huzaifa.jpeg";
+import cofounderSA from "./cofounderSA.jpeg";
 
 const defaultCompanies = [
   {
@@ -39,6 +42,69 @@ const defaultCompanies = [
   },
 ];
 
+const members = [
+  {
+    role: "Founder",
+    name: "Mavia Jabbar",
+    img: founder,
+    desc: "Founder of Tech Orbit Academy. Passionate about building platforms that empower learners.",
+    link: "https://maviajabbar.vercel.app/",
+    borderColor: "border-blue-900", // navy blue
+    hoverBg: "hover:bg-blue-900 hover:text-white",
+    cardColor: "bg-transparent",
+  },
+  // {
+  //   role: "Co-Founder",
+  //   name: "Ali Fahad",
+  //   img: "/cofounder.jpg",
+  //   desc: "Co-Founder managing daily operations, ensuring smooth communication with students.",
+  //   link: "#",
+  //   borderColor: "border-blue-900",
+  //   hoverBg: "hover:bg-blue-900 hover:text-white",
+  //   cardColor: "bg-transparent",
+  // },
+  {
+    role: "Co Founder in South Africa",
+    name: "John Doe",
+    img: cofounderSA,
+    desc: "Leads our international branch in South Africa with a focus on global opportunities.",
+    link: "https://lilprince.vercel.app/",
+    borderColor: "border-[#4CC552]", // parrot green border
+    hoverBg: "hover:bg-[#4CC552] hover:text-white",
+    // cardColor: "bg-green-100", // greenish background?
+  },
+  {
+    role: "Affiliate",
+    name: "Huzaifa Memon",
+    img: Huzaifa,
+    desc: "Handles affiliate partnerships and expands Tech Orbit’s reach worldwide.",
+    link: "https://www.instagram.com/huzaifa62811/",
+    borderColor: "border-blue-900",
+    hoverBg: "hover:bg-blue-900 hover:text-white",
+    cardColor: "bg-transparent",
+  },
+  // {
+  //   role: "Dev-Mentor",
+  //   name: "Ahmed Raza",
+  //   img: "/mentor.jpg",
+  //   desc: "Guides students in React and modern development practices with hands-on mentorship.",
+  //   link: "#",
+  //   borderColor: "border-blue-900",
+  //   hoverBg: "hover:bg-blue-900 hover:text-white",
+  //   cardColor: "bg-transparent",
+  // },
+  // {
+  //   role: "Manager",
+  //   name: "Fatima Ali",
+  //   img: "/manager.jpg",
+  //   desc: "Oversees organizational tasks and ensures smooth workflow across departments.",
+  //   link: "#",
+  //   borderColor: "border-blue-900",
+  //   hoverBg: "hover:bg-blue-900 hover:text-white",
+  //   cardColor: "bg-transparent",
+  // },
+];
+
 const defaultAchievements = [
   { label: "Certificate Issued", value: "20+" },
   { label: "Projects Completed", value: "60+" },
@@ -65,7 +131,6 @@ const About = () => {
             and career journey.
           </p>
         </div>
-
         {/* Main Images */}
         <div className="grid gap-7 lg:grid-cols-3">
           <img
@@ -100,7 +165,6 @@ const About = () => {
             />
           </div>
         </div>
-
         {/* Technologies/Partners */}
         <div className="py-16">
           <h2 className="text-3xl font-bold text-center">
@@ -118,72 +182,39 @@ const About = () => {
             ))}
           </div>
         </div>
-
-        {/* Founders Section */}
-        <div className="py-20">
-          <div className="grid gap-10">
-            {/* Founder */}
-            <div className="flex flex-col md:flex-row items-start gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
-              <img
-                src={founder} // replace with your imported founder image
-                alt="Founder - Mavia Jabbar"
-                className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
-              />
-              <div className="flex-1 text-left">
-                <h3 className="text-2xl font-semibold text-left">Founder</h3>
-                <h5 className="text-lg font-medium mt-1">Mavia Jabbar</h5>
-                <p className="text-muted-foreground mt-3">
-                  Founder of Tech Orbit Academy. Passionate about web
-                  development, React, and building platforms that empower
-                  students with hands-on projects. Mavia focuses on accessible
-                  and affordable training that prepares learners for freelancing
-                  and real-world jobs.
-                </p>
-                <Button asChild className="mt-4">
+        {/* TEAM SECTION */}
+        <section className="py-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {members.map((member, idx) => (
+              <Card
+                key={idx}
+                className={`shadow-none border-none flex flex-col items-center text-center hover:scale-105 transition-transform ${member.cardColor}`}
+              >
+                <CardContent className="flex flex-col items-center">
+                  <img
+                    src={member.img}
+                    alt={member.role}
+                    className={`w-28 h-28 rounded-full object-cover mb-4 border-4 ${member.borderColor}`}
+                  />
+                  <h3 className="text-xl font-bold text-center mt-1 ">
+                    {member.role}
+                  </h3>
                   <a
-                    href="https://techorbitzeta.vercel.app/" // replace with your portfolio link
+                    href={member.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    className={`text-xl font-semibold text-black px-3 py-1 rounded-md transition-colors duration-300 ${member.hoverBg}`}
                   >
-                    View Portfolio
+                    {member.name}
                   </a>
-                </Button>
-              </div>
-            </div>
-
-            {/*
-    // Co-Founder (commented out)
-    <div className="flex flex-col md:flex-row items-start md:items-center gap-6 rounded-xl border bg-muted/30 p-6 shadow-sm">
-      <img
-        src={cofounder} // replace with Ali's image import
-        alt="Co-Founder - Ali Fahad"
-        className="w-40 h-40 rounded-full object-cover border-4 border-primary flex-shrink-0"
-      />
-      <div className="flex-1 text-left">
-        <h3 className="text-2xl font-semibold">Co-Founder</h3>
-        <h5 className="text-lg font-medium mt-1">Ali Fahad</h5>
-        <p className="text-muted-foreground mt-2">
-          Co-Founder of Tech Orbit Academy. Ali manages the daily
-          operations of Tech Orbit, handles student records and data,
-          and ensures smooth communication with learners. He is
-          dedicated to providing students with guidance and support
-          throughout their journey.
-        </p>
-        <Button asChild className="mt-4">
-          <a
-            href="https://ali-portfolio-link.com" // replace with Ali's portfolio
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Portfolio
-          </a>
-        </Button>
-      </div>
-    </div>
-    */}
+                  <p className="text-sm text-muted-foreground mt-2 line-clamp-2">
+                    {member.desc}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
-        </div>
-
+        </section>
         {/* Achievements */}
         <div className="relative overflow-hidden rounded-xl bg-muted p-10 md:p-16">
           <div className="flex flex-col gap-4 text-center md:text-left">
