@@ -53,6 +53,7 @@ const courses = [
   { label: "Basic Coding (HTML, CSS, JS)", value: "coding" },
   { label: "AI Problem Solving & Prompt Engineering", value: "ai" },
   { label: "WordPress & Shopify Development", value: "wordpress-shopify" },
+  { label: "E-commerce Guidance", value: "ecommerce" }, // ✅ new course
 ];
 
 export default function CodeSphereForm(props) {
