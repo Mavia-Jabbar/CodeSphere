@@ -43,7 +43,7 @@ const Hero = () => {
           <img
             src={logo}
             alt="Students learning web development at Tech Orbit "
-            className="max-h-96 w-full rounded-md object-cover"
+            className="max-h-96 -mr-10 w-full rounded-md object-cover"
           />
         </div>
       </div>
