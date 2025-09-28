@@ -64,10 +64,10 @@ const members = [
   //   cardColor: "bg-transparent",
   // },
   {
-    role: "Co Founder in South Africa",
-    name: "John Doe",
+    role: "Co Founder in Nigeria",
+    name: "Matthew Michael",
     img: cofounderSA,
-    desc: "Leads our international branch in South Africa with a focus on global opportunities.",
+    desc: "Leads our international branch in Nigeria with a focus on global opportunities.",
     link: "https://lilprince.vercel.app/",
     borderColor: "border-[#4CC552]", // parrot green border
     hoverBg: "hover:bg-[#4CC552] hover:text-white",

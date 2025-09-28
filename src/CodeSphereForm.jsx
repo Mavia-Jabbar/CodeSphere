@@ -116,7 +116,7 @@ export default function CodeSphereForm(props) {
                   <FormItem>
                     <FormLabel>First Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="John" {...field} />
+                      <Input placeholder="Ayesha" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -131,7 +131,7 @@ export default function CodeSphereForm(props) {
                   <FormItem>
                     <FormLabel>Full Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="John Doe" {...field} />
+                      <Input placeholder="Ayesha Iqbal" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
