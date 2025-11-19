@@ -5,7 +5,7 @@ import founder from "./founder.jpeg";
 import cofounder from "./cofounder.jpeg";
 import { Card, CardContent } from "@/components/ui/card";
 import Huzaifa from "./Huzaifa.jpeg";
-import cofounderSA from "./cofounderSA.jpeg";
+import cofounder1 from "./cofounder1.jpeg";
 
 const defaultCompanies = [
   {
@@ -64,11 +64,11 @@ const members = [
   //   cardColor: "bg-transparent",
   // },
   {
-    role: "Co Founder in Nigeria",
-    name: "Matthew Michael",
-    img: cofounderSA,
-    desc: "Leads our international branch in Nigeria with a focus on global opportunities.",
-    link: "https://lilprince.vercel.app/",
+    role: "Co Founder ",
+    name: "Abdullah shakoor",
+    img: cofounder1,
+    desc: "Leads our lahore branch with the focus on more growing opportunities.",
+    // link: "https://lilprince.vercel.app/",
     borderColor: "border-[#4CC552]", // parrot green border
     hoverBg: "hover:bg-[#4CC552] hover:text-white",
     // cardColor: "bg-green-100", // greenish background?
