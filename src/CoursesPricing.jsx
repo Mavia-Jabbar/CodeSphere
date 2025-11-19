@@ -19,7 +19,7 @@ export default function CoursesPricing({
       id: "basic-coding",
       name: "Basic Coding",
       description: "Learn the foundations of coding",
-      price: "PKR 2500 / month",
+      price: "PKR 3500 / month",
       note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "HTML, CSS, JavaScript basics" },
@@ -35,7 +35,7 @@ export default function CoursesPricing({
       id: "web-dev",
       name: "Complete Web Development",
       description: "Frontend + backend mastery",
-      price: "PKR 4000 / month",
+      price: "PKR 4500 / month",
       note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "HTML, CSS, JavaScript advanced" },
@@ -53,7 +53,7 @@ export default function CoursesPricing({
       id: "ai",
       name: "AI Problem Solving & Prompt Engineering",
       description: "Harness the power of AI tools",
-      price: "PKR 1500 / month",
+      price: "PKR 2500 / month",
       note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "Learn problem-solving with AI" },
@@ -69,7 +69,7 @@ export default function CoursesPricing({
       id: "wordpress-shopify",
       name: "WordPress & Shopify Development",
       description: "Build and manage websites & stores",
-      price: "PKR 2500 / month",
+      price: "PKR 4000 / month",
       note: "Per-month charges. Course duration depends on the student's pace.",
       features: [
         { text: "WordPress customization" },
