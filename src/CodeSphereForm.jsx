@@ -37,14 +37,19 @@ import { Button } from "@/components/ui/button";
 
 // Validation Schema
 const formSchema = z.object({
-  name: z.string().min(1, "Name is required"),
+  name: z.string().min(1, "First name is required"),
   fullName: z.string().min(1, "Full name is required"),
-  phone: z.string().optional(),
-  email: z.string().email("Please enter a valid email"),
-  course: z.string().min(1, "Please select a course"),
-  certificate: z.boolean(),
-  techStack: z.string().optional(),
-  bio: z.string().optional(),
+  phone: z.string().min(5, "Enter a valid WhatsApp number"),
+  email: z.string().email("Enter a valid email address"),
+  course: z.string().min(1, "Please select your course"),
+  certificate: z.boolean(), // ← only this one is optional
+  techStack: z
+    .string()
+    .min(1, "Tell us what you know (write 'None' if beginner)"),
+  bio: z
+    .string()
+    .min(10, "Write at least a short message about yourself")
+    .max(500, "Bio too long (max 500 characters)"),
 });
 
 // Courses list
