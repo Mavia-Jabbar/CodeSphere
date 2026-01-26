@@ -155,7 +155,7 @@ export default function CodeSphereForm(props) {
                         country={"pk"}
                         value={field.value}
                         onChange={(value) => field.onChange(value)}
-                        inputClass="w-full"
+                        inputClass="max-w-full"
                       />
                     </FormControl>
                     <FormMessage />
